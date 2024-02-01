@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarket</title>
+    <title>Tarket:Our Top E-Groceries</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -16,10 +16,13 @@
                     <img class="logo" src="logo.jpg" alt="Logo Tarket">
                 </td>
                 <td>
-                    <div class="topnav">
+                    <div class="topnav" id="myTopnav">
                         <a href="#review" class="active" style="border-radius: 8px 0px 0px 8px;">Home</a>
                         <a href="#info" class="">Our Package</a>
                         <a href="#container" class="" style="border-radius: 0px 8px 8px 0px;">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                            <i class="fa fa-bars" style="color: white;"></i>
+                        </a>
                     </div>
                 </td>
             </tr>
@@ -75,13 +78,13 @@
                     <div id="container">
                         <h2>Contact Us</h2>
                         <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
-                        <form class="contact" action="">
+                        <form class="contact" action="" onsubmit="return validateForm()">
                             <label for="fname">Your Name:</label>
-                            <input type="text" id="fname" name="fname" placeholder="First and last name" required>
+                            <input type="text" id="fname" name="fname" placeholder="First and last name" >
                             <label for="femail">Email Address:</label>
-                            <input type="email" id="femail" name="femail" placeholder="example@email.com" required>
+                            <input type="email" id="femail" name="femail" placeholder="example@email.com" >
                             <label for="option">What are you interested in?</label>
-                            <select name="option" id="option" required>
+                            <select name="option" id="option" >
                                 <option value="" disabled selected>Select option</option>
                                 <option value="Fruits">Fruits</option>
                                 <option value="Vegetables">Vegetables</option>

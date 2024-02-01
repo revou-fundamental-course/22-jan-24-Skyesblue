@@ -22,3 +22,32 @@ window.addEventListener('DOMContentLoaded', (event) => {
         setTimeout(showSlides, 2000);
     }
 });
+
+function validateForm() {
+    var name = document.getElementById("fname").value;
+    var email = document.getElementById("femail").value;
+    var option = document.getElementById("option").value;
+    
+    if (name == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+    if (email == "") {
+        alert("Email must be filled out");
+        return false;
+    }
+    if (option == "") {
+        alert("Please select an option");
+        return false;
+    }
+    return true;
+}
+
+function toggleNavbar() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
