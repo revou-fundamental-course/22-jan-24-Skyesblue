@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarket</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <img class="logo" src="logo.jpg" alt="Logo Tarket">
+                </td>
+                <td>
+                    <div class="topnav">
+                        <a href="#review" class="active" style="border-radius: 8px 0px 0px 8px;">Home</a>
+                        <a href="#info" class="">Our Package</a>
+                        <a href="#container" class="" style="border-radius: 0px 8px 8px 0px;">Contact</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main id="review">
+        <h1 style="color: #D9B08C;">Top Rated E-Groceries Skop in</h1>
+        <h1 style="color: #D9B08C;">Indonesia</h1>
+        <p style="color: #D1E8E2;">Every Day with best ingredients</p>
+        <table>
+            <tr>
+                <td class="left-side">
+                    <div class="my-slide">
+                        <img src="gambar 1.jpg" width="100%" class="slider" alt="Gambar1">
+                        <img src="gambar 2.jpg" width="100%" class="slider" alt="Gambar1">  
+                        <img src="gambar 3.jpg" width="100%" class="slider" alt="Gambar1">     
+                    </div>
+
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>
+                    
+                        <div class="desc">
+                            <p><em>"setiap hari beli sayur buah yang fresh disini"</em></p>
+                            <div class="profile">
+                                <img src="gambar 1.jpg" alt="Profile Pic" class="pic-profile" width="40" height="40">
+                                <div class="nama">
+                                    <b>Florence Hughes</b>
+                                    <i>Ibu Rumah Tangga, 28</i>
+                                </div>
+                            </div>
+                        </div>
+                    <div id="info">
+                        <p><b>Welcome to TARKET, your premier destination for exploring the top e-groceries in the world!
+                            Discover the convenience, quality, and innovation that these platforms offer to revolutionize your 
+                            grocery shopping experience.</b></p>
+                        <ol class="custom">
+                            <li>Convenience at Your Fingertips, with just a few clicks, you can browse through a vast 
+                            selection of groceries from the comfort of your home or on-the-go.</li>
+                            <li>Wide Range of Products, whether you're looking for organic, gluten-free, or international
+                                ingridients, you'll find everything you need conveniently available in one place.
+                            </li>
+                            <li>
+                                Time and Money Savings, by eliminating the need for physical trips to the store,
+                                e-grocery platforms help you save valuable time.
+                            </li>
+                        </ol>
+                    </div>                    
+                </td>
+                <td class="right-side">
+                    <div id="container">
+                        <h2>Contact Us</h2>
+                        <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+                        <form class="contact" action="">
+                            <label for="fname">Your Name:</label>
+                            <input type="text" id="fname" name="fname" placeholder="First and last name" required>
+                            <label for="femail">Email Address:</label>
+                            <input type="email" id="femail" name="femail" placeholder="example@email.com" required>
+                            <label for="option">What are you interested in?</label>
+                            <select name="option" id="option" required>
+                                <option value="" disabled selected>Select option</option>
+                                <option value="Fruits">Fruits</option>
+                                <option value="Vegetables">Vegetables</option>
+                                <option value="Mix">Mix</option>
+                            </select>
+                            <button type="submit">SEND</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
