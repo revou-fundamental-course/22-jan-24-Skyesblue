@@ -10,23 +10,20 @@
 </head>
 <body>
     <header>
-        <table>
-            <tr>
-                <td>
-                    <img class="logo" src="logo.jpg" alt="Logo Tarket">
-                </td>
-                <td>
-                    <div class="topnav" id="myTopnav">
-                        <a href="#review" class="active" style="border-radius: 8px 0px 0px 8px;">Home</a>
-                        <a href="#info" class="">Our Package</a>
-                        <a href="#container" class="" style="border-radius: 0px 8px 8px 0px;">Contact</a>
-                        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
-                            <i class="fa fa-bars" style="color: white;"></i>
-                        </a>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <nav class="navbar">
+            <div class="logo">
+                <img class="logo" src="logo.jpg" alt="Logo Tarket">
+            </div>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="bar"><i class="fa fa-bars bar" style="color: white;"></i></label>
+                <div class="menu">
+                    <li><a href="#review" class="" style="border-radius: 8px 0px 0px 8px;">Home</a></li>
+                    <li><a href="#info" class="">Our Package</a></li>
+                    <li><a href="#container" class="" style="border-radius: 0px 8px 8px 0px;">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
     </header>
     <main id="review">
         <h1 style="color: #D9B08C;">Top Rated E-Groceries Skop in</h1>
@@ -96,7 +93,83 @@
                 </td>
             </tr>
         </table>
+        <div class="gap">
+            <h1>OUR PACKAGE</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <i class="fa fa-lightbulb-o fa-lg light"></i>
+                </div>
+                <div class="point">
+                    <h3>Fresh Vegetable</h3>
+                    <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <i class="fa fa-lightbulb-o fa-lg light"></i>
+                </div>
+                <div class="point">
+                    <h3>Fresh Fruit</h3>
+                    <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <i class="fa fa-lightbulb-o fa-lg light"></i>
+                </div>
+                <div class="point">
+                    <h3>Instant Delivery</h3>
+                    <p>Di kirim instan oleh kurir yang telah di training dengan SOP untukmenjaga kondisi belanja kamu</p>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 10%; color: #D1E8E2;">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <i class="fa fa-star fa-lg light"></i>
+                </div>
+                <div class="point">
+                    <h3>Kitchen Ingredient</h3>
+                    <p>bumbu dapur lengkap untuk keperluan memasak kamu</p>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <i class="fa fa-star fa-lg light"></i>
+                </div>
+                <div class="point">
+                    <h3>Kitchen Set</h3>
+                    <p>Segala jenis alat masa untuk membantu kamu memasak</p>
+                </div>
+            </div>
+            <div class="col">
+                <div>
+                    <i class="fa fa-star fa-lg light"></i>
+                </div>
+                <div class="point">
+                    <h3>Bunding Set</h3>
+                    <p>Bingung masak apa? sudah tersedia paket untuk kamu memasak di dapurmu</p>
+                </div>
+            </div>
+        </div>
+        <hr style="color: #D1E8E2;justify-content: center;">
+        <div class="closing">
+            <h1 style="color: #FFCB9A;">Revolutionize grocery shopping with TARKET</h1>
+            <div style="width: 50%; text-align: center; justify-content: center; display: flex;">
+                <p>Shop smarter, save time. Convenience at your fingertips. Simplify your shopping routine today. Everything is quality products and hassle-free</p>
+            </div>
+            <button>CALL TO ACTION</button>
+        </div>
+        <hr>
     </main>
+    <footer>
+        <img src="logo.jpg" style="width: 8%;" alt="">
+        <p style="margin: 0;">Terms of Service &emsp; Privacy Policy</p>
+        <p>&copy;2024 Tarket Right and Reserve</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
